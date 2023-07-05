@@ -4,7 +4,7 @@ export default class MongoSingleton {
     static #instance;
 
     constructor() {
-        mongoose.connect('mongodb+srv://joaquinelia:4iOyPwxbtCoxQlmS@cluster39760je.eja9lgp.mongodb.net/clase27?retryWrites=true&w=majority')
+        mongoose.connect('')
     }
 
     static getInstance() {
