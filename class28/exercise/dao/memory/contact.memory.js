@@ -1,3 +1,5 @@
+import {v4 as uuidv4} from 'uuid';
+
 export default class Contacts {
     constructor() {
         this.data = [];
@@ -8,7 +10,7 @@ export default class Contacts {
     }
 
     create = async(contact) => {
-        contact._id = this.data.length + 1;
+        contact._id = uuidv4();
         this.data.push(contact);
         return contact;
     };
