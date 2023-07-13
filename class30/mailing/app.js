@@ -7,15 +7,15 @@ const transporter = nodemailer.createTransport({
     service: 'gmail',
     port: 587,
     auth: {
-        user: 'joaco.elia9@gmail.com',
-        pass: 'vywrqjpnqgcavmhv'
+        user: 'insert email',
+        pass: 'insert pass'
     }
 })
 
 app.get('/mail', async ( req, res ) => {
     await transporter.sendMail({
         from: 'Coderhouse backend',
-        to: 'joaquin.elia@hotmail.com',
+        to: 'client email',
         subject: 'Correo de prueba',
         html : `<div>
                     <h1>Hola, esto es una prueba de envio de correo usando gmail</h1>
